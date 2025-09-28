@@ -1,9 +1,16 @@
 name: First Workflow
 on: workflow_dispatch
 jobs: 
-  first_job:
+  terraform_plan:
     runs-on: ubuntu-latest
     steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye"
+  terrafrom_apply:
+     run-on:  ubuntu-latest
+         steps:
       - name: Print greeting
         run: echo "Hello World!"
       - name: Print goodbye
