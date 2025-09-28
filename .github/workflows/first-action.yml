@@ -11,7 +11,7 @@ jobs:
         with:
           node_version: '18'
   terraform_apply:
-      run-on: ubuntu-latest
+      runs-on: ubuntu-latest
       steps:
       - name: Print greeting
         uses: actions/checkout@v3
