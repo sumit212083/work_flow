@@ -10,5 +10,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node_version: '18'
-          
+  terraform_apply:
+      run-on: ubuntu-latest
+      steps:
+      - name: Print greeting
+        uses: actions/checkout@v3
+      - name: Install-nodejs
+        uses: actions/setup-node@v3
+        with:
+          node_version: '18'
         
