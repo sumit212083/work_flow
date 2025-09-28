@@ -5,13 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
-        run: echo "Hello World!"
-      - name: Print goodbye
-        run: echo "Done - bye"
-  terrafrom_apply:
-     run-on:  ubuntu-latest
-         steps:
-      - name: Print greeting
-        run: echo "Hello World!"
-      - name: Print goodbye
-        run: echo "Done - bye"
+        uses: actions/checkout@v3
+      - name: Install-nodejs
+        uses: actions/setup-node@v3
+        with:
+          node_version: '18'
+          
+        
